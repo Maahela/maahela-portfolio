@@ -10,14 +10,17 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Maahela Weerasinghe">
 <meta property="og:description" content="Maahela Weerasinghe: software engineer, founder, marketer and national gold medal boxer based in Singapore.">
-<meta property="og:image" content="assets/me/headshot.jpg">
-<meta property="og:image:width" content="1120">
-<meta property="og:image:height" content="1400">
+<meta property="og:image" content="assets/me/headshot-800.webp">
+<meta property="og:image:type" content="image/webp">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="1000">
 <meta property="og:image:alt" content="Portrait of Maahela Weerasinghe smiling, wearing a navy blazer and light blue shirt">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Maahela Weerasinghe">
 <meta name="twitter:description" content="Maahela Weerasinghe: software engineer, founder, marketer and national gold medal boxer based in Singapore.">
-<meta name="twitter:image" content="assets/me/headshot.jpg">
+<meta name="twitter:image" content="assets/me/headshot-800.webp">
+<!-- the hero portrait is the largest paint, so fetch it before the stylesheet and fonts; imagesizes must match the img sizes below -->
+<link rel="preload" as="image" type="image/webp" href="assets/me/headshot-800.webp" imagesrcset="assets/me/headshot-400.webp 400w, assets/me/headshot-800.webp 800w" imagesizes="(min-width: 1120px) 388px, (min-width: 641px) calc(40vw - 44px), (min-width: 412px) 348px, calc(100vw - 52px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -222,7 +225,7 @@ footer{background:var(--ink);color:#AEB8CC;font-size:13px;padding:20px 0;border-
       </div>
     </div>
     <div class="portrait">
-      <img src="assets/me/headshot.jpg" width="1120" height="1400" alt="Portrait of Maahela Weerasinghe smiling, wearing a navy blazer and light blue shirt" onerror="this.remove()">
+      <img src="assets/me/headshot-800.webp" srcset="assets/me/headshot-400.webp 400w, assets/me/headshot-800.webp 800w" sizes="(min-width: 1120px) 388px, (min-width: 641px) calc(40vw - 44px), (min-width: 412px) 348px, calc(100vw - 52px)" width="800" height="1000" loading="eager" fetchpriority="high" alt="Portrait of Maahela Weerasinghe smiling, wearing a navy blazer and light blue shirt" onerror="this.remove()">
       <div class="fallback" aria-hidden="true">MW</div>
     </div>
   </div>
@@ -288,7 +291,7 @@ footer{background:var(--ink);color:#AEB8CC;font-size:13px;padding:20px 0;border-
       <div class="round-no" aria-hidden="true">R2</div>
       <div><small>Round two</small><h2>Technical work</h2></div>
     </div>
-    <p class="lede">About three years of hands-on engineering: production systems for paying clients, AI pipelines, and a startup I'm building solo.</p>
+    <p class="lede">Three years building software that runs in production: client platforms, AI&nbsp; pipelines, and my own startup.</p>
 
     <div class="feature">
       <div>
@@ -362,7 +365,8 @@ footer{background:var(--ink);color:#AEB8CC;font-size:13px;padding:20px 0;border-
     </div>
     <div class="fight">
       <div class="photo">
-        <img src="assets/boxing/boxing-1.jpg" width="1600" height="1066" alt="Maahela in red with gloves up, squaring off against an opponent at the University of Colombo Invitational Inter-University Boxing Championship 2025" onerror="this.remove()">
+        <!-- on desktop the frame crops and zooms this photo, so it draws about twice the column width -->
+        <img src="assets/boxing/boxing-1-1600.webp" srcset="assets/boxing/boxing-1-800.webp 800w, assets/boxing/boxing-1-1600.webp 1600w" sizes="(min-width: 1120px) 1066px, (min-width: 821px) calc(106.6vw - 85px), calc(100vw - 40px)" width="1600" height="1066" loading="lazy" decoding="async" alt="Maahela in red with gloves up, squaring off against an opponent at the University of Colombo Invitational Inter-University Boxing Championship 2025" onerror="this.remove()">
         <div class="fallback" aria-hidden="true">R3</div>
       </div>
       <div>
@@ -379,8 +383,8 @@ footer{background:var(--ink);color:#AEB8CC;font-size:13px;padding:20px 0;border-
       </div>
     </div>
     <ul class="ring-gallery">
-      <li><a href="assets/boxing/boxing-2.jpg"><img src="assets/boxing/boxing-2.jpg" width="1365" height="2048" loading="lazy" alt="Maahela in red with a high guard, moving around the ring at the University of Colombo Invitational 2025"></a></li>
-      <li><a href="assets/boxing/boxing-3.jpg"><img src="assets/boxing/boxing-3.jpg" width="1365" height="2048" loading="lazy" alt="Maahela from behind in a red UOC Boxing vest, guard up in front of a packed crowd"></a></li>
+      <li><a href="assets/boxing/boxing-2-1000.webp"><img src="assets/boxing/boxing-2-1000.webp" srcset="assets/boxing/boxing-2-500.webp 500w, assets/boxing/boxing-2-1000.webp 1000w" sizes="(min-width: 1120px) 511px, (min-width: 372px) calc(50vw - 26px), calc(100vw - 40px)" width="1000" height="1500" loading="lazy" decoding="async" alt="Maahela in red with a high guard, moving around the ring at the University of Colombo Invitational 2025"></a></li>
+      <li><a href="assets/boxing/boxing-3-1000.webp"><img src="assets/boxing/boxing-3-1000.webp" srcset="assets/boxing/boxing-3-500.webp 500w, assets/boxing/boxing-3-1000.webp 1000w" sizes="(min-width: 1120px) 511px, (min-width: 372px) calc(50vw - 26px), calc(100vw - 40px)" width="1000" height="1500" loading="lazy" decoding="async" alt="Maahela from behind in a red UOC Boxing vest, guard up in front of a packed crowd"></a></li>
     </ul>
     <p class="credit">Photos: <a href="https://www.facebook.com/fosmedia/" target="_blank" rel="noopener">Faculty of Science Media</a></p>
   </div>
@@ -422,37 +426,55 @@ footer{background:var(--ink);color:#AEB8CC;font-size:13px;padding:20px 0;border-
 <script>
 /*
   ADD YOUR POSTS HERE.
-  1. Put each image in assets/posts/
+  1. Save each image as WebP in assets/posts/, once per width, named like jak-1-400.webp and jak-1-800.webp.
+     Square posts: 400 and 800 wide. Wide RideLink posts: 500, 1000 and 1600 wide (never wider than the original).
   2. Add one line per post below.
+  file: the path without the width and extension.
+  widths: the widths you saved, smallest first.
+  width, height: the pixel size of the largest one.
   status: "live" if it was published, "concept" if it was not.
   alt: a short description of the image for screen readers.
 */
 const posts = [
-  { brand: "ridelink", src: "assets/posts/ridelink-1.jpg", caption: "", status: "live", alt: "RideLink Lifecycle Vision Series part 2, Booking and Trust: driver profiles, two-way ratings and same-gender seat preferences shown on an app screen" },
-  { brand: "ridelink", src: "assets/posts/ridelink-2.jpg", caption: "", status: "live", alt: "RideLink Lifecycle Vision Series part 3, The ride itself: PIN verification, in-app chat, live route and ride completion shown on an app screen" },
-  { brand: "ridelink", src: "assets/posts/ridelink-3.jpg", caption: "", status: "live", alt: "RideLink Lifecycle Vision Series part 4, Payment and Fairness: distance-based pricing, fare limits and cancellation rules beside an app fare screen" },
-  { brand: "ridelink", src: "assets/posts/ridelink-4.jpg", caption: "", status: "live", alt: "RideLink infographic explaining how a ride is matched to your route, with a quick geohash filter followed by a precise 500 m pickup and drop-off check" },
-  { brand: "jak",      src: "assets/posts/jak-1.jpg",      caption: "", status: "live", alt: "JAK Travels post titled What do they say about our service, showing three five-star Google reviews over a photo of a group on safari" },
-  { brand: "jak",      src: "assets/posts/jak-2.png",      caption: "", status: "live", alt: "JAK Travels Ayubowan post with Sigiriya rock at sunrise and the line Explore the wonders of Sri Lanka with JAK Travels" },
-  { brand: "jak",      src: "assets/posts/jak-3.jpg",      caption: "", status: "live", alt: "JAK Travels customer testimonial post with a quote from Anthony Wick beside a family holding an Ayubowan sign at the airport" },
-  { brand: "jak",      src: "assets/posts/jak-4.jpg",      caption: "", status: "live", alt: "JAK Travels Adventure Package post in blue and yellow: 12 days, 11 nights of rafting, surfing, hiking and wildlife safari" },
-  { brand: "jak",      src: "assets/posts/jak-5.jpg",      caption: "", status: "live", alt: "JAK Travels Adventure Package post in green: 12 days, 11 nights of rafting, surfing, hiking and wildlife safari" }
+  { brand: "ridelink", file: "assets/posts/ridelink-1", widths: [500, 1000, 1600], width: 1600, height: 833, caption: "", status: "live", alt: "RideLink Lifecycle Vision Series part 2, Booking and Trust: driver profiles, two-way ratings and same-gender seat preferences shown on an app screen" },
+  { brand: "ridelink", file: "assets/posts/ridelink-2", widths: [500, 1000, 1600], width: 1600, height: 878, caption: "", status: "live", alt: "RideLink Lifecycle Vision Series part 3, The ride itself: PIN verification, in-app chat, live route and ride completion shown on an app screen" },
+  { brand: "ridelink", file: "assets/posts/ridelink-3", widths: [500, 1000, 1600], width: 1600, height: 881, caption: "", status: "live", alt: "RideLink Lifecycle Vision Series part 4, Payment and Fairness: distance-based pricing, fare limits and cancellation rules beside an app fare screen" },
+  { brand: "ridelink", file: "assets/posts/ridelink-4", widths: [500, 1000],       width: 1000, height: 833, caption: "", status: "live", alt: "RideLink infographic explaining how a ride is matched to your route, with a quick geohash filter followed by a precise 500 m pickup and drop-off check" },
+  { brand: "jak",      file: "assets/posts/jak-1",      widths: [400, 800],        width: 800,  height: 800, caption: "", status: "live", alt: "JAK Travels post titled What do they say about our service, showing three five-star Google reviews over a photo of a group on safari" },
+  { brand: "jak",      file: "assets/posts/jak-2",      widths: [400, 800],        width: 800,  height: 800, caption: "", status: "live", alt: "JAK Travels Ayubowan post with Sigiriya rock at sunrise and the line Explore the wonders of Sri Lanka with JAK Travels" },
+  { brand: "jak",      file: "assets/posts/jak-3",      widths: [400, 800],        width: 800,  height: 800, caption: "", status: "live", alt: "JAK Travels customer testimonial post with a quote from Anthony Wick beside a family holding an Ayubowan sign at the airport" },
+  { brand: "jak",      file: "assets/posts/jak-4",      widths: [400, 800],        width: 800,  height: 800, caption: "", status: "live", alt: "JAK Travels Adventure Package post in blue and yellow: 12 days, 11 nights of rafting, surfing, hiking and wildlife safari" },
+  { brand: "jak",      file: "assets/posts/jak-5",      widths: [400, 800],        width: 800,  height: 800, caption: "", status: "live", alt: "JAK Travels Adventure Package post in green: 12 days, 11 nights of rafting, surfing, hiking and wildlife safari" }
 ];
 
+// how wide one post renders in each grid, so phones pick the small file (keep in step with the .posts CSS)
+const postSizes = {
+  wide: "(min-width: 1120px) 510px, (min-width: 898px) calc(50vw - 31px), calc(100vw - 42px)",
+  square: "(min-width: 1120px) 192px, (min-width: 1012px) calc(20vw - 24px), (min-width: 814px) calc(25vw - 26px), (min-width: 616px) calc(33.3vw - 27px), (min-width: 418px) calc(50vw - 31px), calc(100vw - 42px)"
+};
+
 document.querySelectorAll(".posts").forEach(grid => {
+  const sizes = grid.classList.contains("wide") ? postSizes.wide : postSizes.square;
   posts.filter(p => p.brand === grid.dataset.brand).forEach(p => {
     const el = document.createElement("figure");
     el.className = "post";
     const label = p.status === "live" ? "Published" : "Concept";
+    const full = p.file + "-" + p.widths[p.widths.length - 1] + ".webp";
     el.innerHTML =
-      '<a class="img" href="' + p.src + '"><div class="fallback">Image coming soon</div></a>' +
+      '<a class="img" href="' + full + '"><div class="fallback">Image coming soon</div></a>' +
       '<figcaption class="cap"><span class="status ' + p.status + '">' + label + '</span></figcaption>';
     // the image goes into the page straight away: a lazy image that is not in the document never loads
     const img = new Image();
     img.alt = p.alt || p.caption;
     img.loading = "lazy";
+    img.decoding = "async";
+    img.width = p.width;
+    img.height = p.height;
     img.onerror = () => img.remove();
-    img.src = p.src;
+    // srcset and sizes go on before src, so the browser never starts fetching the largest file
+    img.sizes = sizes;
+    img.srcset = p.widths.map(w => p.file + "-" + w + ".webp " + w + "w").join(", ");
+    img.src = full;
     el.querySelector(".img").prepend(img);
     if (p.caption) el.querySelector(".cap").append(document.createElement("br"), document.createTextNode(p.caption));
     grid.append(el);
